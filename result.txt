@@ -1,0 +1,1802 @@
+Yijus-MacBook-Pro:Assignment 04 simonyang$ python CompareFeatureSelectionMethods.py 
+
+
+-------------------------------------------------
+Part 01: Using original features
+features: sepal-length sepal-width petal-length petal-width
+
+Confusion Matrix:
+[[50  0  0]
+ [ 0 49  1]
+ [ 0 10 40]]
+
+Accuracy Score:
+0.9266666666666666
+
+
+-------------------------------------------------
+Part 2: Using PCA to transform the original 4 features 
+features: sepal-length-prime sepal-width-prime petal-length-prime petal-width-prime
+
+Eigenvectors:
+[[ 0.36158968 -0.08226889  0.85657211  0.35884393]
+ [ 0.65653988  0.72971237 -0.1757674  -0.07470647]
+ [-0.58099728  0.59641809  0.07252408  0.54906091]
+ [ 0.31725455 -0.32409435 -0.47971899  0.75112056]]
+
+Eigenvalues:
+[4.22484077 0.24224357 0.07852391 0.02368303]
+
+PoV:
+0.9246162071742684
+
+Confusion Matrix:
+[[50  0  0]
+ [ 0 43  7]
+ [ 0  8 42]]
+
+Accuracy Score:
+0.9
+
+
+-------------------------------------------------
+Part 3: Using Simulated Annealing
+--------------------------
+Iteration: 0
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.234037982552
+Status: ACCEPTED
+--------------------------
+Iteration: 1
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.149633909105
+Status: ACCEPTED
+--------------------------
+Iteration: 2
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 3
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.978495461445
+Random Uniform: 0.267270205522
+Status: ACCEPTED
+--------------------------
+Iteration: 4
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.971430543068
+Random Uniform: 0.19243376496
+Status: ACCEPTED
+--------------------------
+Iteration: 5
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.146626993136
+Status: ACCEPTED
+--------------------------
+Iteration: 6
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.225010028466
+Status: ACCEPTED
+--------------------------
+Iteration: 7
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 8
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.843485332539
+Random Uniform: 0.455038526491
+Status: ACCEPTED
+--------------------------
+Iteration: 9
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.774669223646
+Random Uniform: 0.971565512844
+Status: DISCARDED
+--------------------------
+Iteration: 10
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 1.0
+Random Uniform: 0.230300758534
+Status: ACCEPTED
+--------------------------
+Iteration: 11
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.790006357793
+Random Uniform: 0.750568479329
+Status: ACCEPTED
+--------------------------
+Iteration: 12
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 13
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.69336606766
+Random Uniform: 0.305534372306
+Status: ACCEPTED
+--------------------------
+Iteration: 14
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.818730753078
+Random Uniform: 0.521106618967
+Status: ACCEPTED
+--------------------------
+Iteration: 15
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.726767299307
+Random Uniform: 0.0122798216525
+Status: ACCEPTED
+--------------------------
+Iteration: 16
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.798235100572
+Random Uniform: 0.850471232337
+Status: DISCARDED
+--------------------------
+Iteration: 17
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 18
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.683668799325
+Random Uniform: 0.877420903891
+Status: DISCARDED
+--------------------------
+Iteration: 19
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.873092051728
+Random Uniform: 0.691293075231
+Status: ACCEPTED
+--------------------------
+Iteration: 20
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.567011390424
+Random Uniform: 0.25543889043
+Status: ACCEPTED
+--------------------------
+Iteration: 21
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 22
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.72866093669
+Random Uniform: 0.186882471088
+Status: ACCEPTED
+--------------------------
+Iteration: 23
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.000763723332561
+Random Uniform: 0.947431992536
+Status: DISCARDED
+--------------------------
+Iteration: 24
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.00062896900983
+Random Uniform: 0.666682963677
+Status: DISCARDED
+--------------------------
+Iteration: 25
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.587478932244
+Random Uniform: 0.0538030462767
+Status: ACCEPTED
+--------------------------
+Iteration: 26
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.830510849901
+Random Uniform: 0.243647453744
+Status: ACCEPTED
+--------------------------
+Iteration: 27
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.556016937682
+Random Uniform: 0.168772153919
+Status: ACCEPTED
+--------------------------
+Iteration: 28
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 29
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.65685639906
+Random Uniform: 0.796092036661
+Status: DISCARDED
+--------------------------
+Iteration: 30
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.161244881565
+Status: ACCEPTED
+--------------------------
+Iteration: 31
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.409799882077
+Random Uniform: 0.95714645894
+Status: DISCARDED
+--------------------------
+Iteration: 32
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.444679591
+Status: ACCEPTED
+--------------------------
+Iteration: 33
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.790006357793
+Random Uniform: 0.566756751535
+Status: ACCEPTED
+--------------------------
+Iteration: 34
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.78573573997
+Random Uniform: 0.588868910391
+Status: ACCEPTED
+--------------------------
+Iteration: 35
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.778800783071
+Random Uniform: 0.852668631335
+Status: DISCARDED
+--------------------------
+Iteration: 36
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 37
+Subset: ---
+Accuracy: ---
+Pr[Accept]: ---
+Random Uniform: ---
+Status: Restart
+--------------------------
+Iteration: 0
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.41418431291
+Status: ACCEPTED
+--------------------------
+Iteration: 1
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 2
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.944841974094
+Random Uniform: 0.681939563636
+Status: ACCEPTED
+--------------------------
+Iteration: 3
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 4
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.890526846546
+Random Uniform: 0.340205656447
+Status: ACCEPTED
+--------------------------
+Iteration: 5
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.865926283294
+Status: ACCEPTED
+--------------------------
+Iteration: 6
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.595201398488
+Status: ACCEPTED
+--------------------------
+Iteration: 7
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.904837418036
+Random Uniform: 0.389290049991
+Status: ACCEPTED
+--------------------------
+Iteration: 8
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.843485332539
+Random Uniform: 0.376706105553
+Status: ACCEPTED
+--------------------------
+Iteration: 9
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 10
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 11
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.540432996487
+Random Uniform: 0.750628298784
+Status: DISCARDED
+--------------------------
+Iteration: 12
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9
+Pr[Accept]: 0.000523195397046
+Random Uniform: 0.123715794197
+Status: DISCARDED
+--------------------------
+Iteration: 13
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.905947497325
+Status: ACCEPTED
+--------------------------
+Iteration: 14
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 15
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 16
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.894144296021
+Random Uniform: 0.752636822561
+Status: ACCEPTED
+--------------------------
+Iteration: 17
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.884097077854
+Random Uniform: 0.879254073914
+Status: ACCEPTED
+--------------------------
+Iteration: 18
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.683668799325
+Random Uniform: 0.590970546628
+Status: ACCEPTED
+--------------------------
+Iteration: 19
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.391950501711
+Random Uniform: 0.784074167787
+Status: DISCARDED
+--------------------------
+Iteration: 20
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.748372019433
+Random Uniform: 0.443777784965
+Status: ACCEPTED
+--------------------------
+Iteration: 21
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.737604263822
+Random Uniform: 0.465231086729
+Status: ACCEPTED
+--------------------------
+Iteration: 22
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 23
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.742276314458
+Status: ACCEPTED
+--------------------------
+Iteration: 24
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.503730293689
+Random Uniform: 0.168663933518
+Status: ACCEPTED
+--------------------------
+Iteration: 25
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.417226568864
+Random Uniform: 0.334575507823
+Status: ACCEPTED
+--------------------------
+Iteration: 26
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.829401966889
+Random Uniform: 0.662495749216
+Status: ACCEPTED
+--------------------------
+Iteration: 27
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.0268386147239
+Status: ACCEPTED
+--------------------------
+Iteration: 28
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.818730753078
+Random Uniform: 0.807816097003
+Status: ACCEPTED
+--------------------------
+Iteration: 29
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 30
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.230263386045
+Random Uniform: 9.0371157061e-05
+Status: ACCEPTED
+--------------------------
+Iteration: 31
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 32
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.794362138935
+Random Uniform: 0.845967231678
+Status: DISCARDED
+--------------------------
+Iteration: 33
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.394720458433
+Random Uniform: 0.772271791294
+Status: DISCARDED
+--------------------------
+Iteration: 34
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.78839011821
+Random Uniform: 0.994009798919
+Status: DISCARDED
+--------------------------
+Iteration: 35
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 36
+Subset: NEW SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 37
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 38
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.581085633668
+Random Uniform: 0.679023414846
+Status: DISCARDED
+--------------------------
+Iteration: 39
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.753814701126
+Random Uniform: 0.493198253503
+Status: ACCEPTED
+--------------------------
+Iteration: 40
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.259583382755
+Status: ACCEPTED
+--------------------------
+Iteration: 41
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.12506572473
+Status: ACCEPTED
+--------------------------
+Iteration: 42
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.737604263822
+Random Uniform: 0.747912023599
+Status: DISCARDED
+--------------------------
+Iteration: 43
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 44
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.716260469423
+Status: ACCEPTED
+--------------------------
+Iteration: 45
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.278985423323
+Random Uniform: 0.945892438182
+Status: DISCARDED
+--------------------------
+Iteration: 46
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.84043285825
+Status: ACCEPTED
+--------------------------
+Iteration: 47
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.135335283237
+Random Uniform: 0.591481002995
+Status: DISCARDED
+--------------------------
+Iteration: 48
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.256224279139
+Random Uniform: 0.920307329877
+Status: DISCARDED
+--------------------------
+Iteration: 49
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.249057640343
+Random Uniform: 0.676458474197
+Status: DISCARDED
+--------------------------
+Iteration: 50
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 51
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.0735118461409
+Status: ACCEPTED
+--------------------------
+Iteration: 52
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.162320611182
+Random Uniform: 0.705267979179
+Status: DISCARDED
+--------------------------
+Iteration: 53
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.318578969723
+Random Uniform: 0.417908214177
+Status: DISCARDED
+--------------------------
+Iteration: 54
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.143352873263
+Random Uniform: 0.666700661204
+Status: DISCARDED
+--------------------------
+Iteration: 55
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.229192888114
+Status: ACCEPTED
+--------------------------
+Iteration: 56
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 57
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 58
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.056166621382
+Random Uniform: 0.8952824245
+Status: DISCARDED
+--------------------------
+Iteration: 59
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 0.27472881286
+Random Uniform: 0.452259934291
+Status: DISCARDED
+--------------------------
+Iteration: 60
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 61
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 62
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.409799882077
+Random Uniform: 0.951911312184
+Status: DISCARDED
+--------------------------
+Iteration: 63
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.163172127194
+Random Uniform: 0.0672938273432
+Status: ACCEPTED
+--------------------------
+Iteration: 64
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.621139130495
+Status: ACCEPTED
+--------------------------
+Iteration: 65
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.162320611182
+Random Uniform: 0.64157954481
+Status: DISCARDED
+--------------------------
+Iteration: 66
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.624110045353
+Random Uniform: 0.493017409517
+Status: ACCEPTED
+--------------------------
+Iteration: 67
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.79933318879e-20
+Random Uniform: 0.784737107347
+Status: DISCARDED
+--------------------------
+Iteration: 68
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.386335563743
+Random Uniform: 0.66106266853
+Status: DISCARDED
+--------------------------
+Iteration: 69
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.0205001322085
+Random Uniform: 0.67537736445
+Status: DISCARDED
+--------------------------
+Iteration: 70
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.365242323894
+Random Uniform: 0.47845437422
+Status: DISCARDED
+--------------------------
+Iteration: 71
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 72
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 73
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.0723746426503
+Random Uniform: 0.385345910598
+Status: DISCARDED
+--------------------------
+Iteration: 74
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.041943635604
+Random Uniform: 0.511181158397
+Status: DISCARDED
+--------------------------
+Iteration: 75
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.342518855093
+Random Uniform: 0.522762137043
+Status: DISCARDED
+--------------------------
+Iteration: 76
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.337660513655
+Random Uniform: 0.140968326626
+Status: ACCEPTED
+--------------------------
+Iteration: 77
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.34683608822
+Status: ACCEPTED
+--------------------------
+Iteration: 78
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 79
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 3.65923276893e-24
+Random Uniform: 0.185154719546
+Status: DISCARDED
+--------------------------
+Iteration: 80
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 81
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.0107648559297
+Random Uniform: 0.530135350391
+Status: DISCARDED
+--------------------------
+Iteration: 82
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 1.0
+Random Uniform: 0.47811394664
+Status: ACCEPTED
+--------------------------
+Iteration: 83
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 5.10308223078e-25
+Random Uniform: 0.350367053492
+Status: DISCARDED
+--------------------------
+Iteration: 84
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.351925122113
+Status: ACCEPTED
+--------------------------
+Iteration: 85
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 1.0
+Random Uniform: 0.594783276913
+Status: ACCEPTED
+--------------------------
+Iteration: 86
+Subset: ---
+Accuracy: ---
+Pr[Accept]: ---
+Random Uniform: ---
+Status: Restart
+--------------------------
+Iteration: 0
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 1
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.992779814874
+Random Uniform: 0.220101184044
+Status: ACCEPTED
+--------------------------
+Iteration: 2
+Subset: ---
+Accuracy: ---
+Pr[Accept]: ---
+Random Uniform: ---
+Status: Restart
+--------------------------
+Iteration: 0
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 1
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.992779814874
+Random Uniform: 0.814171346797
+Status: ACCEPTED
+--------------------------
+Iteration: 2
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.971430543068
+Random Uniform: 0.927289607879
+Status: ACCEPTED
+--------------------------
+Iteration: 3
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 4
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 0.97122503629
+Random Uniform: 0.242628894047
+Status: ACCEPTED
+--------------------------
+Iteration: 5
+Subset: NEW SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 6
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 7
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.315512531344
+Status: ACCEPTED
+--------------------------
+Iteration: 8
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.944070949932
+Random Uniform: 0.419585835306
+Status: ACCEPTED
+--------------------------
+Iteration: 9
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.9368637752
+Random Uniform: 0.320787625669
+Status: ACCEPTED
+--------------------------
+Iteration: 10
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.865084978157
+Random Uniform: 0.585540507822
+Status: ACCEPTED
+--------------------------
+Iteration: 11
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 12
+Subset: NEW SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 13
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.68790762268
+Random Uniform: 0.847963031776
+Status: DISCARDED
+--------------------------
+Iteration: 14
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 15
+Subset: ORIGINAL SUBSET
+Accuracy: 0.8933333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.571513762913
+Status: ACCEPTED
+--------------------------
+Iteration: 16
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 17
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.613111398322
+Random Uniform: 0.0293246271697
+Status: ACCEPTED
+--------------------------
+Iteration: 18
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.879350749407
+Random Uniform: 0.77525101553
+Status: ACCEPTED
+--------------------------
+Iteration: 19
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 20
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: 1.0
+Random Uniform: 0.773946983555
+Status: ACCEPTED
+--------------------------
+Iteration: 21
+Subset: NEW SUBSET
+Accuracy: 0.92
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 22
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.619860473156
+Random Uniform: 0.166451171479
+Status: ACCEPTED
+--------------------------
+Iteration: 23
+Subset: NEW SUBSET
+Accuracy: 0.9133333333333333
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 24
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.840369970131
+Random Uniform: 0.40435183061
+Status: ACCEPTED
+--------------------------
+Iteration: 25
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.834302343372
+Random Uniform: 0.466880873919
+Status: ACCEPTED
+--------------------------
+Iteration: 26
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.222076158605
+Status: ACCEPTED
+--------------------------
+Iteration: 27
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.822298201708
+Random Uniform: 0.282277975022
+Status: ACCEPTED
+--------------------------
+Iteration: 28
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 29
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.352337601579
+Random Uniform: 0.749744403768
+Status: DISCARDED
+--------------------------
+Iteration: 30
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 31
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 32
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.408564739952
+Random Uniform: 0.517793350937
+Status: DISCARDED
+--------------------------
+Iteration: 33
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.196565304713
+Random Uniform: 0.585160662306
+Status: DISCARDED
+--------------------------
+Iteration: 34
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 35
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 1.0
+Random Uniform: 0.131384994251
+Status: ACCEPTED
+--------------------------
+Iteration: 36
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 37
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.344814667674
+Random Uniform: 0.776614454878
+Status: DISCARDED
+--------------------------
+Iteration: 38
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 39
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 40
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.426960476987
+Random Uniform: 0.904363797468
+Status: DISCARDED
+--------------------------
+Iteration: 41
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.179016066483
+Random Uniform: 0.565918642195
+Status: DISCARDED
+--------------------------
+Iteration: 42
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 43
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.220009509835
+Random Uniform: 0.943760272573
+Status: DISCARDED
+--------------------------
+Iteration: 44
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.72866093669
+Random Uniform: 0.159569968996
+Status: ACCEPTED
+--------------------------
+Iteration: 45
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.730018564249
+Random Uniform: 0.550691264097
+Status: ACCEPTED
+--------------------------
+Iteration: 46
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.515885465823
+Random Uniform: 0.0558467901174
+Status: ACCEPTED
+--------------------------
+Iteration: 47
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 48
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.362734358621
+Random Uniform: 0.405119703697
+Status: DISCARDED
+--------------------------
+Iteration: 49
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 0.70112263538
+Random Uniform: 0.99435691422
+Status: DISCARDED
+--------------------------
+Iteration: 50
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 51
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.16809654648
+Random Uniform: 0.567280486115
+Status: DISCARDED
+--------------------------
+Iteration: 52
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 53
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.690299739511
+Random Uniform: 0.395830894347
+Status: ACCEPTED
+--------------------------
+Iteration: 54
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.218465589808
+Random Uniform: 0.171460323495
+Status: ACCEPTED
+--------------------------
+Iteration: 55
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 0.310300912771
+Random Uniform: 0.039705946785
+Status: ACCEPTED
+--------------------------
+Iteration: 56
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.0954025139068
+Random Uniform: 0.646545572357
+Status: DISCARDED
+--------------------------
+Iteration: 57
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.963591542984
+Status: ACCEPTED
+--------------------------
+Iteration: 58
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.293654282722
+Random Uniform: 0.422185319792
+Status: DISCARDED
+--------------------------
+Iteration: 59
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.654122633795
+Random Uniform: 0.667771807111
+Status: DISCARDED
+--------------------------
+Iteration: 60
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.122713599516
+Random Uniform: 0.0289908857323
+Status: ACCEPTED
+--------------------------
+Iteration: 61
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.118497059523
+Random Uniform: 0.541844003839
+Status: DISCARDED
+--------------------------
+Iteration: 62
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 63
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.0698104315677
+Random Uniform: 0.854832864148
+Status: DISCARDED
+--------------------------
+Iteration: 64
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.141752641622
+Status: ACCEPTED
+--------------------------
+Iteration: 65
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.160255491491
+Random Uniform: 0.893159437193
+Status: DISCARDED
+--------------------------
+Iteration: 66
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.247990163432
+Random Uniform: 0.193188189039
+Status: ACCEPTED
+--------------------------
+Iteration: 67
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 68
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.659428877712
+Status: ACCEPTED
+--------------------------
+Iteration: 69
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.0138048451954
+Status: ACCEPTED
+--------------------------
+Iteration: 70
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 71
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.0114641389437
+Random Uniform: 0.867356163372
+Status: DISCARDED
+--------------------------
+Iteration: 72
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 73
+Subset: NEW SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 74
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 75
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.200459538189
+Random Uniform: 0.169270829744
+Status: ACCEPTED
+--------------------------
+Iteration: 76
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 77
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.114290241903
+Random Uniform: 0.740718603319
+Status: DISCARDED
+--------------------------
+Iteration: 78
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.112836187317
+Random Uniform: 0.455580247763
+Status: DISCARDED
+--------------------------
+Iteration: 79
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.109723665052
+Random Uniform: 0.282179712437
+Status: DISCARDED
+--------------------------
+Iteration: 80
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 81
+Subset: NEW SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 82
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 0.0944473983935
+Random Uniform: 0.910009023741
+Status: DISCARDED
+--------------------------
+Iteration: 83
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.173163139358
+Random Uniform: 0.940782255297
+Status: DISCARDED
+--------------------------
+Iteration: 84
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.70601521951
+Status: ACCEPTED
+--------------------------
+Iteration: 85
+Subset: NEW SUBSET
+Accuracy: 0.94
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 86
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9333333333333333
+Pr[Accept]: 0.292710436906
+Random Uniform: 0.120496243495
+Status: ACCEPTED
+--------------------------
+Iteration: 87
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9266666666666666
+Pr[Accept]: 1.0
+Random Uniform: 0.727888563923
+Status: ACCEPTED
+--------------------------
+Iteration: 88
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.155804240306
+Random Uniform: 0.589212162747
+Status: DISCARDED
+--------------------------
+Iteration: 89
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.536666928181
+Random Uniform: 0.862184684815
+Status: DISCARDED
+--------------------------
+Iteration: 90
+Subset: ORIGINAL SUBSET
+Accuracy: 0.92
+Pr[Accept]: 1.0
+Random Uniform: 0.140031388196
+Status: ACCEPTED
+--------------------------
+Iteration: 91
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.5292133415
+Random Uniform: 0.104010578166
+Status: ACCEPTED
+--------------------------
+Iteration: 92
+Subset: ORIGINAL SUBSET
+Accuracy: 0.94
+Pr[Accept]: 1.0
+Random Uniform: 0.465706276022
+Status: ACCEPTED
+--------------------------
+Iteration: 93
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 1.0
+Random Uniform: 0.389001529551
+Status: ACCEPTED
+--------------------------
+Iteration: 94
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: 0.515833195144
+Random Uniform: 0.575913231864
+Status: DISCARDED
+--------------------------
+Iteration: 95
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 96
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+--------------------------
+Iteration: 97
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.0170785827722
+Random Uniform: 0.442450623203
+Status: DISCARDED
+--------------------------
+Iteration: 98
+Subset: ORIGINAL SUBSET
+Accuracy: 0.9533333333333334
+Pr[Accept]: 0.032498107355
+Random Uniform: 0.419559335557
+Status: DISCARDED
+--------------------------
+Iteration: 99
+Subset: NEW SUBSET
+Accuracy: 0.9466666666666667
+Pr[Accept]: ---
+Random Uniform: ---
+Status: IMPROVED
+features: sepal-length sepal-width petal-length petal-width sepal-length-prime sepal-width-prime petal-length-prime petal-width-prime
+
+Confusion Matrix:
+[[50  0  0]
+ [ 0 48  2]
+ [ 0  7 43]]
+
+Accuracy Score:
+0.94
+
+
+-------------------------------------------------
+Part 4: Using the genetic algorithm
+[array([ True,  True,  True,  True,  True, False, False, False]), array([ True,  True, False,  True,  True,  True, False, False]), array([False,  True,  True, False,  True,  True,  True, False]), array([False,  True, False,  True,  True,  True,  True,  True]), array([ True, False, False,  True,  True,  True,  True,  True])]
+[0.9733333333333334, 0.9466666666666667, 0.92, 0.92, 0.92]
+('Gen: ', 0)
+[array([False,  True, False,  True, False, False,  True,  True]), array([ True,  True, False,  True,  True,  True,  True,  True]), array([False, False, False,  True, False,  True, False,  True]), array([False,  True, False,  True, False, False,  True,  True]), array([ True,  True, False,  True,  True,  True,  True,  True]), array([False, False, False,  True, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92]
+('Gen: ', 1)
+[array([False, False,  True, False, False, False,  True,  True]), array([False,  True, False,  True, False, False,  True,  True]), array([False,  True, False, False, False, False, False,  True]), array([False, False,  True, False, False, False,  True,  True]), array([False,  True, False,  True, False, False,  True,  True]), array([False,  True, False, False, False, False, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.9066666666666666]
+('Gen: ', 2)
+[array([False,  True, False,  True,  True, False, False,  True]), array([False,  True, False,  True, False, False, False, False]), array([False,  True, False,  True, False,  True,  True,  True]), array([False,  True, False,  True,  True, False, False,  True]), array([False,  True, False,  True, False, False, False, False]), array([False,  True, False,  True, False,  True,  True,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.9466666666666667, 0.9333333333333333]
+('Gen: ', 3)
+[array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True, False, False, False,  True]), array([False,  True, False,  True,  True,  True,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True, False, False, False,  True]), array([False,  True, False,  True,  True,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667]
+('Gen: ', 4)
+[array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True,  True,  True,  True, False]), array([False, False, False,  True, False,  True,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True,  True,  True,  True, False]), array([False, False, False,  True, False,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92]
+('Gen: ', 5)
+[array([ True, False,  True,  True, False, False, False, False]), array([False,  True, False,  True, False,  True,  True, False]), array([False, False, False,  True, False, False,  True, False]), array([ True, False,  True,  True, False, False, False, False]), array([False,  True, False,  True, False,  True,  True, False]), array([False, False, False,  True, False, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.92, 0.92, 0.92]
+('Gen: ', 6)
+[array([ True, False, False,  True, False,  True,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False, False, False,  True, False,  True,  True, False]), array([ True, False, False,  True, False,  True,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False, False, False,  True, False,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92]
+('Gen: ', 7)
+[array([False, False,  True,  True, False, False,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False, False,  True,  True, False, False,  True, False]), array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True, False, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667]
+('Gen: ', 8)
+[array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True,  True, False,  True, False]), array([False,  True,  True,  True, False,  True, False,  True]), array([False,  True, False,  True, False, False,  True, False]), array([False,  True, False,  True,  True, False,  True, False]), array([False,  True,  True,  True, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92]
+('Gen: ', 9)
+[array([False,  True,  True,  True,  True, False, False,  True]), array([ True,  True, False, False, False, False,  True, False]), array([False,  True, False,  True,  True, False, False,  True]), array([False,  True,  True,  True,  True, False, False,  True]), array([ True,  True, False, False, False, False,  True, False]), array([False,  True, False,  True,  True, False, False,  True])]
+[0.9733333333333334, 0.9333333333333333, 0.9333333333333333, 0.92, 0.92, 0.92]
+('Gen: ', 10)
+[array([False,  True,  True,  True,  True,  True, False,  True]), array([False,  True, False,  True,  True, False, False,  True]), array([False,  True,  True,  True,  True,  True,  True,  True]), array([False,  True,  True,  True,  True,  True, False,  True]), array([False,  True, False,  True,  True, False, False,  True]), array([False,  True,  True,  True,  True,  True,  True,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92]
+('Gen: ', 11)
+[array([False,  True, False, False,  True,  True, False, False]), array([ True,  True, False,  True,  True, False, False,  True]), array([ True,  True, False,  True,  True, False, False,  True]), array([False,  True, False, False,  True,  True, False, False]), array([ True,  True, False,  True,  True, False, False,  True]), array([ True,  True, False,  True,  True, False, False,  True])]
+[0.9466666666666667, 0.9466666666666667, 0.9333333333333333, 0.9333333333333333, 0.6533333333333333, 0.64]
+('Gen: ', 12)
+[array([ True, False, False,  True,  True, False, False, False]), array([ True,  True, False,  True,  True, False, False,  True]), array([ True,  True, False,  True,  True, False, False,  True]), array([ True, False, False,  True,  True, False, False, False]), array([ True,  True, False,  True,  True, False, False,  True]), array([ True,  True, False,  True,  True, False, False,  True])]
+[0.9466666666666667, 0.9466666666666667, 0.9466666666666667, 0.9466666666666667, 0.9333333333333333, 0.9333333333333333]
+('Gen: ', 13)
+[array([ True,  True, False,  True,  True, False,  True,  True]), array([False, False,  True,  True, False, False, False, False]), array([ True, False, False,  True,  True,  True,  True, False]), array([ True,  True, False,  True,  True, False,  True,  True]), array([False, False,  True,  True, False, False, False, False]), array([ True, False, False,  True,  True,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.92, 0.92, 0.92]
+('Gen: ', 14)
+[array([ True, False, False,  True, False,  True,  True,  True]), array([False, False, False, False, False, False,  True,  True]), array([False, False,  True, False,  True, False,  True, False]), array([ True, False, False,  True, False,  True,  True,  True]), array([False, False, False, False, False, False,  True,  True]), array([False, False,  True, False,  True, False,  True, False])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.92, 0.9066666666666666]
+('Gen: ', 15)
+[array([ True, False, False, False,  True, False,  True,  True]), array([False, False,  True,  True, False,  True,  True, False]), array([False, False, False, False,  True, False, False,  True]), array([ True, False, False, False,  True, False,  True,  True]), array([False, False,  True,  True, False,  True,  True, False]), array([False, False, False, False,  True, False, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92]
+('Gen: ', 16)
+[array([False, False, False, False, False,  True,  True, False]), array([False, False,  True, False, False, False, False, False]), array([False, False, False, False, False, False, False,  True]), array([False, False, False, False, False,  True,  True, False]), array([False, False,  True, False, False, False, False, False]), array([False, False, False, False, False, False, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9066666666666666, 0.9066666666666666, 0.8933333333333333, 0.8933333333333333]
+('Gen: ', 17)
+[array([False, False, False, False, False,  True, False,  True]), array([False,  True, False,  True, False, False, False,  True]), array([False, False,  True, False, False,  True, False,  True]), array([False, False, False, False, False,  True, False,  True]), array([False,  True, False,  True, False, False, False,  True]), array([False, False,  True, False, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.9466666666666667, 0.9466666666666667]
+('Gen: ', 18)
+[array([False, False,  True, False, False,  True, False,  True]), array([ True, False,  True,  True, False, False, False,  True]), array([False,  True,  True, False, False,  True, False,  True]), array([False, False,  True, False, False,  True, False,  True]), array([ True, False,  True,  True, False, False, False,  True]), array([False,  True,  True, False, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92]
+('Gen: ', 19)
+[array([False, False,  True, False, False,  True, False,  True]), array([False, False,  True,  True,  True, False, False, False]), array([ True,  True,  True, False, False,  True, False,  True]), array([False, False,  True, False, False,  True, False,  True]), array([False, False,  True,  True,  True, False, False, False]), array([ True,  True,  True, False, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92]
+('Gen: ', 20)
+[array([ True,  True,  True, False, False,  True, False,  True]), array([False, False,  True,  True, False,  True,  True,  True]), array([False,  True,  True,  True, False,  True, False,  True]), array([ True,  True,  True, False, False,  True, False,  True]), array([False, False,  True,  True, False,  True,  True,  True]), array([False,  True,  True,  True, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92]
+('Gen: ', 21)
+[array([ True,  True,  True,  True, False,  True, False,  True]), array([False,  True,  True,  True,  True,  True, False,  True]), array([False,  True,  True,  True,  True, False, False,  True]), array([ True,  True,  True,  True, False,  True, False,  True]), array([False,  True,  True,  True,  True,  True, False,  True]), array([False,  True,  True,  True,  True, False, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92]
+('Gen: ', 22)
+[array([ True, False,  True,  True,  True, False, False,  True]), array([False,  True, False, False, False,  True,  True, False]), array([ True, False,  True,  True,  True,  True, False,  True]), array([ True, False,  True,  True,  True, False, False,  True]), array([False,  True, False, False, False,  True,  True, False]), array([ True, False,  True,  True,  True,  True, False,  True])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.8933333333333333, 0.8933333333333333]
+('Gen: ', 23)
+[array([ True, False,  True, False,  True,  True, False,  True]), array([ True,  True,  True,  True,  True, False, False, False]), array([False, False,  True,  True,  True,  True, False, False]), array([ True, False,  True, False,  True,  True, False,  True]), array([ True,  True,  True,  True,  True, False, False, False]), array([False, False,  True,  True,  True,  True, False, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92]
+('Gen: ', 24)
+[array([ True, False,  True,  True,  True,  True, False, False]), array([False, False,  True,  True, False, False, False, False]), array([ True, False,  True, False,  True,  True,  True, False]), array([ True, False,  True,  True,  True,  True, False, False]), array([False, False,  True,  True, False, False, False, False]), array([ True, False,  True, False,  True,  True,  True, False])]
+[0.92, 0.92, 0.92, 0.92, 0.9066666666666666, 0.9066666666666666]
+('Gen: ', 25)
+[array([ True, False,  True,  True,  True,  True,  True, False]), array([False, False, False, False,  True,  True,  True, False]), array([ True, False,  True,  True,  True,  True, False, False]), array([ True, False,  True,  True,  True,  True,  True, False]), array([False, False, False, False,  True,  True,  True, False]), array([ True, False,  True,  True,  True,  True, False, False])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 26)
+[array([ True, False,  True,  True, False,  True, False, False]), array([False, False,  True, False,  True, False, False,  True]), array([ True, False, False, False,  True,  True, False, False]), array([ True, False,  True,  True, False,  True, False, False]), array([False, False,  True, False,  True, False, False,  True]), array([ True, False, False, False,  True,  True, False, False])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.6666666666666666, 0.6533333333333333]
+('Gen: ', 27)
+[array([ True, False,  True, False,  True, False, False, False]), array([False, False,  True,  True, False,  True,  True, False]), array([ True, False, False, False,  True, False,  True, False]), array([ True, False,  True, False,  True, False, False, False]), array([False, False,  True,  True, False,  True,  True, False]), array([ True, False, False, False,  True, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 28)
+[array([False, False,  True, False, False,  True,  True, False]), array([False,  True,  True, False,  True, False,  True, False]), array([ True, False, False,  True, False,  True,  True, False]), array([False, False,  True, False, False,  True,  True, False]), array([False,  True,  True, False,  True, False,  True, False]), array([ True, False, False,  True, False,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.8933333333333333, 0.8933333333333333]
+('Gen: ', 29)
+[array([ True, False,  True,  True, False,  True,  True, False]), array([ True,  True, False, False,  True, False,  True, False]), array([False,  True,  True,  True, False,  True,  True, False]), array([ True, False,  True,  True, False,  True,  True, False]), array([ True,  True, False, False,  True, False,  True, False]), array([False,  True,  True,  True, False,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 30)
+[array([False,  True, False,  True, False,  True,  True, False]), array([ True,  True,  True, False,  True, False, False, False]), array([ True,  True, False,  True,  True,  True,  True, False]), array([False,  True, False,  True, False,  True,  True, False]), array([ True,  True,  True, False,  True, False, False, False]), array([ True,  True, False,  True,  True,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 31)
+[array([False, False, False,  True, False, False,  True, False]), array([ True, False,  True,  True,  True,  True, False, False]), array([ True,  True, False,  True, False,  True,  True,  True]), array([False, False, False,  True, False, False,  True, False]), array([ True, False,  True,  True,  True,  True, False, False]), array([ True,  True, False,  True, False,  True,  True,  True])]
+[0.9733333333333334, 0.9466666666666667, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 32)
+[array([False,  True, False,  True, False, False,  True,  True]), array([False, False, False,  True,  True, False, False, False]), array([ True, False,  True,  True, False,  True,  True, False]), array([False,  True, False,  True, False, False,  True,  True]), array([False, False, False,  True,  True, False, False, False]), array([ True, False,  True,  True, False,  True,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92]
+('Gen: ', 33)
+[array([ True, False,  True,  True,  True,  True,  True, False]), array([False,  True, False,  True, False, False,  True,  True]), array([False, False, False,  True, False, False,  True, False]), array([ True, False,  True,  True,  True,  True,  True, False]), array([False,  True, False,  True, False, False,  True,  True]), array([False, False, False,  True, False, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.92, 0.9066666666666666]
+('Gen: ', 34)
+[array([False, False, False,  True,  True,  True,  True,  True]), array([ True, False,  True,  True, False, False, False, False]), array([False,  True, False, False,  True,  True,  True,  True]), array([False, False, False,  True,  True,  True,  True,  True]), array([ True, False,  True,  True, False, False, False, False]), array([False,  True, False, False,  True,  True,  True,  True])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 35)
+[array([False,  True, False,  True, False,  True, False,  True]), array([ True, False,  True,  True,  True,  True,  True, False]), array([False, False, False,  True, False, False,  True,  True]), array([False,  True, False,  True, False,  True, False,  True]), array([ True, False,  True,  True,  True,  True,  True, False]), array([False, False, False,  True, False, False,  True,  True])]
+[0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92, 0.92]
+('Gen: ', 36)
+[array([False, False,  True,  True, False, False, False, False]), array([ True,  True,  True,  True, False,  True, False,  True]), array([False,  True, False,  True, False,  True, False, False]), array([False, False,  True,  True, False, False, False, False]), array([ True,  True,  True,  True, False,  True, False,  True]), array([False,  True, False,  True, False,  True, False, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.9066666666666666]
+('Gen: ', 37)
+[array([ True,  True,  True,  True,  True,  True, False,  True]), array([ True,  True,  True, False, False,  True,  True,  True]), array([False,  True, False,  True, False,  True, False, False]), array([ True,  True,  True,  True,  True,  True, False,  True]), array([ True,  True,  True, False, False,  True,  True,  True]), array([False,  True, False,  True, False,  True, False, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92]
+('Gen: ', 38)
+[array([ True, False,  True, False,  True,  True, False,  True]), array([ True,  True, False,  True, False,  True, False,  True]), array([False, False, False, False,  True,  True,  True,  True]), array([ True, False,  True, False,  True,  True, False,  True]), array([ True,  True, False,  True, False,  True, False,  True]), array([False, False, False, False,  True,  True,  True,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92]
+('Gen: ', 39)
+[array([ True, False,  True, False, False,  True,  True,  True]), array([ True, False, False, False, False,  True,  True,  True]), array([ True,  True, False,  True, False,  True, False,  True]), array([ True, False,  True, False, False,  True,  True,  True]), array([ True, False, False, False, False,  True,  True,  True]), array([ True,  True, False,  True, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92]
+('Gen: ', 40)
+[array([ True,  True,  True, False, False,  True, False,  True]), array([ True,  True,  True, False,  True,  True, False,  True]), array([ True,  True, False, False, False, False,  True, False]), array([ True,  True,  True, False, False,  True, False,  True]), array([ True,  True,  True, False,  True,  True, False,  True]), array([ True,  True, False, False, False, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 41)
+[array([ True,  True,  True, False,  True,  True, False,  True]), array([ True,  True,  True,  True,  True, False,  True,  True]), array([ True,  True, False, False, False,  True,  True, False]), array([ True,  True,  True, False,  True,  True, False,  True]), array([ True,  True,  True,  True,  True, False,  True,  True]), array([ True,  True, False, False, False,  True,  True, False])]
+[0.9733333333333334, 0.92, 0.92, 0.92, 0.92, 0.92]
+('Gen: ', 42)
+[array([False,  True,  True, False, False,  True,  True,  True]), array([False,  True, False, False, False,  True, False, False]), array([ True,  True,  True, False, False,  True, False,  True]), array([False,  True,  True, False, False,  True,  True,  True]), array([False,  True, False, False, False,  True, False, False]), array([ True,  True,  True, False, False,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.5333333333333333, 0.5333333333333333]
+('Gen: ', 43)
+[array([ True,  True,  True,  True, False,  True,  True,  True]), array([False,  True,  True, False, False, False, False,  True]), array([ True,  True, False,  True, False,  True,  True,  True]), array([ True,  True,  True,  True, False,  True,  True,  True]), array([False,  True,  True, False, False, False, False,  True]), array([ True,  True, False,  True, False,  True,  True,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92]
+('Gen: ', 44)
+[array([False,  True,  True, False, False, False,  True,  True]), array([ True, False,  True,  True, False, False,  True,  True]), array([ True,  True, False,  True,  True, False, False, False]), array([False,  True,  True, False, False, False,  True,  True]), array([ True, False,  True,  True, False, False,  True,  True]), array([ True,  True, False,  True,  True, False, False, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9466666666666667, 0.9466666666666667, 0.92, 0.92]
+('Gen: ', 45)
+[array([False,  True,  True, False, False,  True,  True,  True]), array([False,  True,  True,  True,  True,  True, False,  True]), array([ True, False, False, False,  True, False,  True, False]), array([False,  True,  True, False, False,  True,  True,  True]), array([False,  True,  True,  True,  True,  True, False,  True]), array([ True, False, False, False,  True, False,  True, False])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92]
+('Gen: ', 46)
+[array([ True,  True,  True,  True,  True,  True, False,  True]), array([False,  True,  True, False, False, False,  True,  True]), array([ True,  True,  True,  True,  True,  True, False,  True]), array([ True,  True,  True,  True,  True,  True, False,  True]), array([False,  True,  True, False, False, False,  True,  True]), array([ True,  True,  True,  True,  True,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92]
+('Gen: ', 47)
+[array([False,  True, False, False, False,  True,  True, False]), array([ True,  True, False,  True,  True,  True,  True,  True]), array([False,  True,  True, False,  True, False,  True,  True]), array([False,  True, False, False, False,  True,  True, False]), array([ True,  True, False,  True,  True,  True,  True,  True]), array([False,  True,  True, False,  True, False,  True,  True])]
+[0.92, 0.92, 0.92, 0.92, 0.8933333333333333, 0.8933333333333333]
+('Gen: ', 48)
+[array([ True,  True,  True,  True,  True, False,  True,  True]), array([False,  True, False, False,  True, False,  True,  True]), array([ True,  True,  True, False,  True,  True, False,  True]), array([ True,  True,  True,  True,  True, False,  True,  True]), array([False,  True, False, False,  True, False,  True,  True]), array([ True,  True,  True, False,  True,  True, False,  True])]
+[0.9733333333333334, 0.9733333333333334, 0.9733333333333334, 0.92, 0.92, 0.92]
+('Gen: ', 49)
